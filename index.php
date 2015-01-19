@@ -9,4 +9,7 @@
 	include 'includes/init.php';
 
 	$registry->router = new router($registry);
-	$router->sethPath(__SITE_PATH . 'controller');
+	$registry->router->setPath (__SITE_PATH . '/controller');
+	$registry->template = new template($registry);
+	
+	$registry->router->loader();

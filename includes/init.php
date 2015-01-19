@@ -26,4 +26,4 @@
 
 	$registry = new registry;
 
-	$registry->db = db::getInstance();
+	//$registry->db = db::getInstance();
